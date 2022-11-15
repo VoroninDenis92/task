@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.scroll-hidden { 
+    overflow: hidden 
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    background-color: #eee;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.menu { 
+    width: 300px;
+    float: left;
+    position: sticky;
+    top: 0;
+}
+
+.menu-active {
+    display: block;
+}
+
+.nav.open-menu {
+    width: 300px;
+    left: 0;
+}
+
+li {
+    height: 80px;
+}
+
+.content {
+    max-width: 850px;
+    height: 1200px;
+    margin: 0 15px;
+    float: left;
+}
+
+footer {
+    height: 200px;
+    width: 100%;
+    background-color: #eee;
+}
+
+#myBtn {
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+.modal {
+    -webkit-overflow-scrolling: touch;
+    display: none;
+    flex-flow: column nowrap;
+    justify-content: center; /* см. ниже */
+    align-items: center;
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.4); 
+  }
+
+.menu-active {
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden auto; 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 450px; 
+    max-height: 100%;
+    overflow: hidden auto; 
+}
+
+
+input {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.gender {
+    display: flex;
+}
+
+.gender input, label {
+    margin-left: 10px;
+}
+
+#age {
+    display: none;
+}
+  
+

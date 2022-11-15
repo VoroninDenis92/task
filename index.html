@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+    <div class="container">
+        <div class="menu">
+            <nav id="nav" class="nav">
+                <ul class="nav-menu">
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                    <li>7</li>
+                    <li>8</li>
+                    <li>9</li>
+                    <li>10</li>
+                </ul>
+            </nav>
+        </div>
+        
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto labore unde tempora nobis autem impedit, reprehenderit dolores optio eligendi repellendus, officia ad voluptates mollitia amet. Assumenda saepe distinctio praesentium unde?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, possimus repellendus quas dolorum ipsam, ad provident eius deleniti dolorem velit enim tenetur porro officiis tempore qui obcaecati, minus delectus voluptatem?</p>
+        </div>
+        <div style="clear:both"></div>
+    </div>
+    <footer>
+        <button id="myBtn">Обратная связь</button>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+              <form id="my_form" action="" onsubmit="return (ValidMail()&&ValidPhone()&&ageVer())">
+                <label for="email">Email</label>
+                <input id="email" type="email" required name="f[email]" placeholder="Email">
+                <p id="message_email"></p> 
+                <label for="phone">Телефон</label>
+                <input id="phone" type="tel" required name="f[phone]" placeholder="phone">
+                <p id="message_phone"></p> 
+                <div class="gender">
+                    <label for="man">Man</label>
+                    <input id="man" type="radio" name="gender">
+                    <label for="woman">Woman</label>
+                    <input id="woman" type="radio" name="gender">
+                </div>
+                
+                <input id="age" type="number" name="age" id="age" placeholder="Ваш возраст">
+                <p id="message_age"></p> 
+                <input name="button" type="submit" value="Отправить" onClick="ValidMail(); ValidPhone(); ageVer()">
+              </form>
+              <div id="my_message"></div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/menu.js"></script> 
+</body>
+</html>
